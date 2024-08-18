@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'LeJourScript';
+    src: url('LeJourScript.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica, 'roboto', sans-serif;
+    text-decoration: none;
+    transition: .2s linear;
+}
+html {
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: .5rem;
+}
+
+
+/*aqui começa o css do design do site*/
+
+
+body {
+    background-color: #D1BCE3;
+}
+header {
+    display: flex;
+    background-color: white;
+    height: 70px;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.cabecalho {
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.outrasabas {
+    display: flex;
+    align-items: center;
+}
+.outrasabas p a {
+    color: black;
+    font-size: 15px;
+    margin-left: 20px;
+} 
+button a{
+    font-size: 15px;
+    color: #fff
+}
+a {
+    color: #141414;
+}
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: #ff9ccc;
+    background-color: #ff9ccc;
+    height: 40px;
+    width: 130px;
+}
+button:hover {
+    background-color: #ff6cb3;
+}
+.nomeLogo {
+    font-family: 'LeJourScript';
+    margin: 20px 0 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+section {
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/*aqui começa o sobre nos, */
+
+.tumbnail {
+    display: flex;
+    margin-top: 20px;
+    height: 520px;
+    align-items: center;
+    justify-content: center;
+}
+.tumbnail h1 {
+    font-size:  5.7rem;
+    font-weight: 200;
+    margin-bottom: 15%;
+}
+.img-tumb {
+    width: 500px;
+    height: 500px;
+    margin-right: 150px;
+    margin-left: 100px;
+}
+.shortSobrenos {
+    margin-right: 30px;
+}
+
+/*Aqui começa a parte da apresentação dos produtos*/
+
+.produtos {
+    
+}
+.container-categorias{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 30px;
+}
+.item {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.img-produto {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 280px;
+}
+.img-produto img{
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.descricao {
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.preco {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.categoria {
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin: 50px;
+}
+.hot_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.hot_bar a {
+    color: #141414;
+    margin: 0 50px 0 50px;
+    font-size: 1.5rem;
+}
+
+/*informativos sobre a loja*/
+
+.container-informations {
+    height: 500px;
+}
+.informations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px 0 30px;
+}
+
+.mapa {
+    margin-top: 20px;
+}
+.mapa iframe{
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width:500px;
+    height: 380px;
+}
+
+.titulo-funcionamento, .titulo-contato{
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.data-hora, .email-tell, .end {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+.container-cnpj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.cnpj {
+    font-size: 1.5rem;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.direitos {
+    color: #141414;
+    font-size: 1.5rem;
+}
+.direitos span a {
+    color: #141414;
+}
