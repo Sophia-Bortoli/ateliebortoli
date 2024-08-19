@@ -107,7 +107,7 @@ section {
     width: 500px;
     height: 500px;
     margin-right: 150px;
-    margin-left: 100px;
+    margin-left: 10%;
 }
 .shortSobrenos {
     margin-right: 30px;
@@ -115,9 +115,7 @@ section {
 
 /*Aqui começa a parte da apresentação dos produtos*/
 
-.produtos {
-    
-}
+
 .container-categorias{
     display: flex;
     justify-content: center;
@@ -136,17 +134,21 @@ section {
 .img-produto {
     display: flex;
     justify-content: center;
-    width: 280px;
-    height: 280px;
 }
 .img-produto img{
     border-radius: 5px;
     margin-bottom: 15px;
+    width: 280px;
+    height: 280px;
 }
 .descricao {
     flex-wrap: wrap;
     font-size: 14px;
     margin-bottom: 5px;
+}
+.descricao-saias {
+    margin-left: 50px;
+    font-size: 1.5rem;
 }
 .preco {
     font-size: 16px;
@@ -157,7 +159,7 @@ section {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    margin: 50px;
+    margin: 50px 50px 10px 50px;
 }
 .hot_bar {
     display: flex;
@@ -169,7 +171,7 @@ section {
 }
 .hot_bar a {
     color: #141414;
-    margin: 0 50px 0 50px;
+    margin: 0 10% 0 10%;
     font-size: 1.5rem;
 }
 
@@ -182,7 +184,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 80px 0 30px;
+    margin: 0 8% 0 3%;
 }
 
 .mapa {
@@ -190,7 +192,7 @@ section {
 }
 .mapa iframe{
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(4, 0, 255, 0.253);
     width:500px;
     height: 380px;
 }
@@ -203,7 +205,7 @@ section {
     padding: 10px;
 }
 
-.data-hora, .email-tell, .end {
+.data-hora, .email-tell {
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -216,7 +218,6 @@ section {
     justify-content: center;
     align-items: center;
     background-color: hsl(0, 0%, 100%);
-    margin-bottom: 30px;
     margin-top: 30px;
 }
 .cnpj {
@@ -242,4 +243,87 @@ footer {
 }
 .direitos span a {
     color: #141414;
+}
+
+
+@media (max-width: 986px) {
+
+    .tumbnail {
+        height:420px;
+    }
+    .tumbnail h1 {
+        font-size:  4.7rem;
+    }
+    .img-tumb {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .container-categorias{
+        gap: 10px;
+        border-radius: 5px;
+        padding: 30px;
+    }
+    .item {
+        width: 250px;
+    }
+    .img-produto img{
+        width: 240px;
+        height: 240px;
+    }
+    .descricao {
+        font-size: 14px;
+    }
+    .categoria {
+        font-size: 13px;
+    }
+
+    .mapa iframe{
+        width:350px;
+        height: 280px;
+    }
+
+    .container-informations {
+        height: 380px;
+    }
+}
+
+
+@media (max-width: 795px) {
+
+    .tumbnail {
+        height:320px;
+    }
+    .tumbnail h1 {
+        font-size:  3.7rem;
+    }
+    .img-tumb {
+        width: 250px;
+        height: 250px;
+        margin-right: 80px;
+        margin-left: 5%;
+    }
+
+
+    .container-informations {
+        height: 600px;
+    }
+    .informations {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 8% 0 3%;
+    }
+    
+    .mapa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .mapa iframe{
+        width:400px;
+        height: 280px;
+    }
 }
