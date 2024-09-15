@@ -344,13 +344,14 @@ footer {
         width: 70vw;
         height: auto;
         margin-right: 100px;
-        margin-left: 15%;
+        margin-left: 10%;
     }
-    .shortSobrenos {
-        margin-right: 15px;
+    .shortSobrenos button{
+        margin-left: 30%;
     }
     .shortSobrenos h1 {
         margin-left: 5%;
+        text-align: center;
     }
 }
 
